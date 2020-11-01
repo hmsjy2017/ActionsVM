@@ -3,7 +3,7 @@
 ## Example ##
 
 # Setting the time zone
-#sudo systemsetup -settimezone "Asia/Shanghai"
+sudo systemsetup -settimezone "Asia/Shanghai"
 
 # Install the tools you need to use
-#brew install neofetch
+brew install neofetch
