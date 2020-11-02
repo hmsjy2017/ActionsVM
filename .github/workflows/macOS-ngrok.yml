@@ -17,7 +17,7 @@ jobs:
       run: source macos-start.sh
 
     - name: Start SSH via ngrok
-      uses: hmsjy2017/ssh2actions@main
+      uses: P3TERX/ssh2actions@main
       with:
         mode: ngrok
       env:
