@@ -9,8 +9,8 @@ sudo systemsetup -settimezone "Asia/Shanghai"
 brew install neofetch
 
 # Setting up VNC connection
-brew install screen
-screen -S ngrok_vnc
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-darwin-amd64.zip -O ngrok.zip
-unzip ngrok.zip
+# brew install screen
+# screen -S ngrok_vnc
+# wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-darwin-amd64.zip -O ngrok.zip
+# unzip ngrok.zip
 
