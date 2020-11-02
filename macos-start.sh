@@ -11,4 +11,6 @@ brew install neofetch
 # Setting up VNC connection
 brew install screen
 screen -S ngrok_vnc
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-darwin-amd64.zip
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-darwin-amd64.zip -O ngrok.zip
+unzip ngrok.zip
+
