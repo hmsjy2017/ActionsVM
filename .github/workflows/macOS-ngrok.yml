@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@main
 
     - name: Run Start Script
-      run:| 
+      run: | 
         source macos-start.sh
         ngrok authtoken ${{ secrets.NGROK_VNC }}
         ngrok tcp 5900
