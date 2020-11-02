@@ -13,4 +13,7 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 brew install screen
 screen -dmS ngrok_vnc
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-darwin-amd64.zip -O ngrok.zip
-unzip ngrok.zip
+unzip ngrok.zip ngrok
+rm ngrok.zip
+chmod +x ngrok
+sudo mv ngrok /usr/local/bin
