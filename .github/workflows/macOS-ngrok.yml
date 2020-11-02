@@ -15,7 +15,7 @@ jobs:
 
     - name: Run Start Script
       run:| 
-        # source macos-start.sh
+        source macos-start.sh
         ngrok authtoken ${{ secrets.NGROK_VNC }}
         ngrok tcp 5900
 
