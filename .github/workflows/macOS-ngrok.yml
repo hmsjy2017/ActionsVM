@@ -14,10 +14,7 @@ jobs:
       uses: actions/checkout@main
 
     - name: Run Start Script
-      run: | 
-        source macos-start.sh
-        ngrok authtoken ${{ secrets.NGROK_VNC }}
-        ngrok tcp 5900
+      run: source macos-start.sh
 
     - name: Start SSH via ngrok
       uses: P3TERX/ssh2actions@main
