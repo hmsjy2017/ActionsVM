@@ -15,7 +15,16 @@ jobs:
 
     - name: Run Start Script
       run: source macos-start.sh
-
+      
+    - name: Setup SSH Private Key
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa 
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        
     - name: Start SSH via ngrok
       uses: P3TERX/ssh2actions@main
       with:
